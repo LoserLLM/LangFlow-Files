@@ -1,0 +1,83 @@
+================================================================================
+                    LANGFUSE SETUP - PREREQUISITES
+================================================================================
+
+Before using this folder to set up LangFuse, make sure you have:
+
+================================================================================
+                        REQUIRED SOFTWARE
+================================================================================
+
+1. Docker Desktop
+   - Download from: https://www.docker.com/products/docker-desktop/
+   - Versions: Windows 10/11, macOS, or Linux
+   - Must be running before you start LangFuse
+
+   To check if Docker is installed:
+   Open Command Prompt and type: docker --version
+
+   You should see something like: Docker version 24.0.x
+
+2. That's it! Everything else is included in this folder.
+
+================================================================================
+                        SYSTEM REQUIREMENTS
+================================================================================
+
+- Operating System: Windows 10/11, macOS, or Linux
+- RAM: At least 4GB available (8GB+ recommended)
+- Disk Space: At least 2GB free for Docker images and data
+- Internet: Required for first-time Docker image download (~500MB)
+
+================================================================================
+                        WHAT'S PORTABLE
+================================================================================
+
+This entire folder can be copied to any PC and will work, including:
+
+✓ docker-compose.yml     - Container configuration
+✓ .env                   - Environment settings
+✓ GUIDE.md              - Complete instructions
+✓ QUICK-REFERENCE-ENV-VARS.md - API keys & env vars help
+✓ README.txt            - Quick command reference
+✓ This file             - Prerequisites list
+
+================================================================================
+                        WHAT'S NOT PORTABLE
+================================================================================
+
+These are created fresh on each PC:
+
+× API Keys              - Generate new ones on each PC
+× User Accounts         - Create new account on each PC
+× Trace Data            - Stored locally per PC (in Docker volumes)
+× Environment Variables - Set once per PC (but guides explain how)
+
+Each PC runs its own independent LangFuse instance!
+
+================================================================================
+                        QUICK START
+================================================================================
+
+1. Install Docker Desktop (if not already installed)
+2. Start Docker Desktop
+3. Open this folder in Command Prompt/Terminal
+4. Run: docker-compose up -d
+5. Follow GUIDE.md or QUICK-REFERENCE-ENV-VARS.md
+
+================================================================================
+                        PLATFORMS TESTED
+================================================================================
+
+✓ Windows 10/11 with Docker Desktop
+✓ macOS with Docker Desktop
+✓ Linux with Docker Engine
+
+Note: Commands in guides use Windows syntax. Linux/macOS users:
+- Use $VARIABLE_NAME instead of %VARIABLE_NAME%
+- Use forward slashes / instead of backslashes \
+
+================================================================================
+For setup instructions, see GUIDE.md
+For env vars help, see QUICK-REFERENCE-ENV-VARS.md
+================================================================================
